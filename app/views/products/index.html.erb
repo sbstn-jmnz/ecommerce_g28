@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <% @products.each_slice(4) do |row| %>
+      <% row.each do |product| %>
+        <div class="col">
+          <div class="card">
+            <%= image_tag product.photo, class: 'card-img-top' %>
+            <div class="card-body">
+              <h5> <%= product.name %> </h>
+              <p> <%= product.price %> </p>
+              <%= link_to "Comprar", product_orders_path(product), class: 'btn btn-success', method: :post  %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <div class="w-100" style="margin-top:20px;"> </div>
+    <% end %>
+  </div>
+</div>
