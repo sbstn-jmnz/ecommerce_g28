@@ -8,7 +8,7 @@
             <div class="card-body">
               <h5> <%= product.name %> </h>
               <p> <%= product.price %> </p>
-              <%= link_to "Comprar", product_orders_path(product), class: 'btn btn-success', method: :post  %>
+              <%= link_to "Agregar al carro", product_orders_path(product), class: 'btn btn-success', method: :post  %>
             </div>
           </div>
         </div>
