@@ -12,6 +12,6 @@ Product.destroy_all
   Product.create(
     name: Faker::Commerce.product_name,
     price: Faker::Commerce.price.to_i,
-    photo: "http://lorempixel.com/400/200/technics/#{i + 1}/"
+    photo: "https://picsum.photos/id/#{i+25}/400/200"
   )
 end

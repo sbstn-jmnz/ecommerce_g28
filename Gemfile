@@ -7,12 +7,12 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.3'
+gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'faker'
-
+gem 'paypal-sdk-rest'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
